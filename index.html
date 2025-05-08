@@ -2,182 +2,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Add a senior assistant to send and receive bull stocks and learning materials</title>
+  <meta charset="UTF-8">
+  <title>Add Friends to Receive Bull Stocks</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 30px 20px;
-      background: linear-gradient(135deg, #a2d4f5, #b1f1c3);
-      background-attachment: fixed;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #a8edea, #fed6e3);
       text-align: center;
+      color: #333;
     }
-
     h1 {
-      color: #005f73;
-      margin-bottom: 8px;
+      font-size: 28px;
+      padding: 30px 10px 10px;
     }
-
-    p.subtitle {
-      font-size: 14px;
-      color: #2b2b2b;
-      margin-bottom: 12px;
-    }
-
-    .vote-btn {
+    .vote-button {
       display: inline-block;
-      background: #0066cc;
-      color: white;
-      padding: 10px 20px;
+      margin: 10px auto 30px;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      color: #fff;
+      border: none;
       border-radius: 30px;
-      font-size: 14px;
-      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
       text-decoration: none;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: background 0.2s ease;
+      transition: 0.3s ease;
     }
-
-    .vote-btn:hover {
-      background: #004da8;
+    .vote-button:hover {
+      opacity: 0.85;
     }
-
     .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
-      max-width: 1000px;
-      margin: 0 auto;
+      padding: 30px;
     }
-
     .card {
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.08);
-      padding: 22px 12px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
-
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
     }
-
-    .card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
+    .avatar {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 3px solid #00a58c;
-      margin-bottom: 14px;
+      object-fit: cover;
+      border: 3px solid #00c9a7;
+      margin-bottom: 15px;
     }
-
     .name {
+      font-size: 18px;
       font-weight: 600;
-      color: #00897b;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
-
     .number {
-      font-size: 13px;
-      color: #444;
-      margin-bottom: 12px;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-
-    .btn {
+    .whatsapp-button {
+      display: inline-block;
+      padding: 8px 16px;
       background: #25D366;
       color: white;
-      font-size: 13px;
-      padding: 7px 14px;
-      border-radius: 20px;
       text-decoration: none;
-      display: inline-block;
-      transition: background 0.2s ease;
-    }
-
-    .btn:hover {
-      background: #1da851;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #224;
-    }
-
-    @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      border-radius: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
-  <h1>📲 Add friends and send them to receive bull stocks</h1>
-  <p class="subtitle">Tap a photo below to start chatting directly</p>
-
-  <!-- 🗳️ Voting Button -->
-  <a href="https://vote.bpok.net/#/?group=4" target="_blank" class="vote-btn">🗳️ Vote for Mr Ahmad Azman</a>
-
+  <h1>📘 Add Friends to Receive Bull Stocks</h1>
+  <a href="https://vote.bpok.net/#/?group=4" class="vote-button" target="_blank">Vote for Mr Ahmad Azman</a>
   <div class="grid">
     <div class="card">
-      <img src="a1.jpg" alt="Assistant 1">
+      <img src="https://weiweijian033.github.io/images/a1.jpg" class="avatar" alt="Assistant 1">
       <div class="name">Assistant 1</div>
       <div class="number">+60 10-930 2386</div>
-      <a class="btn" href="https://wa.me/60109302386" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/60109302386" class="whatsapp-button">WhatsApp</a>
     </div>
-
     <div class="card">
-      <img src="a2.jpg" alt="Assistant 2">
+      <img src="https://weiweijian033.github.io/images/a2.jpg" class="avatar" alt="Assistant 2">
       <div class="name">Assistant 2</div>
       <div class="number">+60 11-6964 2305</div>
-      <a class="btn" href="https://wa.me/601169642305" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/601169642305" class="whatsapp-button">WhatsApp</a>
     </div>
-
     <div class="card">
-      <img src="a3.jpg" alt="Assistant 3">
+      <img src="https://weiweijian033.github.io/images/a3.jpg" class="avatar" alt="Assistant 3">
       <div class="name">Assistant 3</div>
       <div class="number">+60 16-724 2795</div>
-      <a class="btn" href="https://wa.me/60167242795" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/60167242795" class="whatsapp-button">WhatsApp</a>
     </div>
-
     <div class="card">
-      <img src="a4.jpg" alt="Assistant 4">
+      <img src="https://weiweijian033.github.io/images/a4.jpg" class="avatar" alt="Assistant 4">
       <div class="name">Assistant 4</div>
       <div class="number">+60 16-451 4101</div>
-      <a class="btn" href="https://wa.me/60164514101" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/60164514101" class="whatsapp-button">WhatsApp</a>
     </div>
-
     <div class="card">
-      <img src="a5.jpg" alt="Assistant 5">
+      <img src="https://weiweijian033.github.io/images/a5.jpg" class="avatar" alt="Assistant 5">
       <div class="name">Assistant 5</div>
       <div class="number">+60 11-6969 5806</div>
-      <a class="btn" href="https://wa.me/601169695806" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/601169695806" class="whatsapp-button">WhatsApp</a>
     </div>
-
     <div class="card">
-      <img src="a6.jpg" alt="Assistant 6">
+      <img src="https://weiweijian033.github.io/images/a6.jpg" class="avatar" alt="Assistant 6">
       <div class="name">Assistant 6</div>
       <div class="number">+60 16-935 8104</div>
-      <a class="btn" href="https://wa.me/60169358104" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/60169358104" class="whatsapp-button">WhatsApp</a>
     </div>
   </div>
-
-  <footer>
-    © 2025 Rita Zeng · Designed for client engagement and support.
-  </footer>
-
 </body>
 </html>
-
-
