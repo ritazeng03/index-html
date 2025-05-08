@@ -1,14 +1,9 @@
-import zipfile
-
-# Create a zip file with the HTML and avatar images
-zip_path = "/mnt/data/whatsapp_assistants_page.zip"
-html_content = '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WhatsApp Assistant Grid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Assistant Grid</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,101 +13,77 @@ html_content = '''
     }
     h2 {
       color: #2e8b57;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      max-width: 720px;
-      margin: 0 auto;
     }
     .card {
-      background-color: #ffffff;
+      background-color: #fff;
       border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
+      width: 160px;
       text-decoration: none;
-      color: #333;
+      color: #000;
+      transition: transform 0.2s ease;
     }
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
     }
     .card img {
       width: 100%;
-      height: 140px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      border-radius: 8px;
     }
     .name {
+      margin-top: 10px;
       font-weight: bold;
-      margin-bottom: 4px;
       color: #2e8b57;
     }
     .number {
       font-size: 14px;
-      color: #666;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
   <h2>📱 Select a WhatsApp Assistant</h2>
-
   <div class="grid">
     <a href="https://wa.me/60109302386" class="card">
       <img src="a1.jpg" alt="Assistant 1">
       <div class="name">Assistant 1</div>
       <div class="number">+60 10-930 2386</div>
     </a>
-
     <a href="https://wa.me/601169642305" class="card">
       <img src="a2.jpg" alt="Assistant 2">
       <div class="name">Assistant 2</div>
       <div class="number">+60 11-6964 2305</div>
     </a>
-
     <a href="https://wa.me/60167242795" class="card">
       <img src="a3.jpg" alt="Assistant 3">
       <div class="name">Assistant 3</div>
       <div class="number">+60 16-724 2795</div>
     </a>
-
     <a href="https://wa.me/60164514101" class="card">
       <img src="a4.jpg" alt="Assistant 4">
       <div class="name">Assistant 4</div>
       <div class="number">+60 16-451 4101</div>
     </a>
-
     <a href="https://wa.me/601169695806" class="card">
       <img src="a5.jpg" alt="Assistant 5">
       <div class="name">Assistant 5</div>
       <div class="number">+60 11-6969 5806</div>
     </a>
-
     <a href="https://wa.me/60169358104" class="card">
       <img src="a6.jpg" alt="Assistant 6">
       <div class="name">Assistant 6</div>
       <div class="number">+60 16-935 8104</div>
     </a>
   </div>
-
 </body>
 </html>
-'''
-
-# Save HTML file
-html_file_path = "/mnt/data/index.html"
-with open(html_file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-# Create the zip
-with zipfile.ZipFile(zip_path, 'w') as zipf:
-    zipf.write(html_file_path, arcname="index.html")
-    for i in range(1, 7):
-        avatar_path = f"/mnt/data/a{i}.jpg"
-        zipf.write(avatar_path, arcname=f"a{i}.jpg")
-
-zip_path
