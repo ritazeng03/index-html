@@ -2,88 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>WhatsApp Assistants</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WhatsApp Assistant Grid</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", sans-serif;
       background: #f9f9f9;
+      margin: 0;
       padding: 20px;
       text-align: center;
     }
+
     h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
       color: #2e8b57;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
       margin-bottom: 30px;
     }
+
     .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
     }
+
     .card {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 15px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
       width: 160px;
-      text-decoration: none;
-      color: #000;
-      transition: transform 0.2s ease;
+      padding: 20px 10px;
+      transition: transform 0.25s ease;
     }
+
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
+
     .card img {
-      width: 100%;
-      height: 160px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 50%;
+      border: 3px solid #2e8b57;
+      margin-bottom: 12px;
     }
+
     .name {
-      margin-top: 10px;
       font-weight: bold;
+      margin-bottom: 5px;
       color: #2e8b57;
     }
+
     .number {
-      font-size: 14px;
+      font-size: 13px;
       color: #333;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background: #25D366;
+      color: white;
+      padding: 6px 14px;
+      font-size: 13px;
+      text-decoration: none;
+      border-radius: 20px;
+      display: inline-block;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #1da851;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        width: 45%;
+      }
     }
   </style>
 </head>
 <body>
-  <h2>📱 Select a WhatsApp Assistant</h2>
+
+  <h2>📲 Select a WhatsApp Assistant</h2>
+  <p>Tap an avatar to chat instantly with your personal assistant</p>
+
   <div class="grid">
-    <a href="https://wa.me/60109302386" class="card">
+    <div class="card">
       <img src="a1.jpg" alt="Assistant 1">
       <div class="name">Assistant 1</div>
       <div class="number">+60 10-930 2386</div>
-    </a>
-    <a href="https://wa.me/601169642305" class="card">
+      <a class="btn" href="https://wa.me/60109302386" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="card">
       <img src="a2.jpg" alt="Assistant 2">
       <div class="name">Assistant 2</div>
       <div class="number">+60 11-6964 2305</div>
-    </a>
-    <a href="https://wa.me/60167242795" class="card">
+      <a class="btn" href="https://wa.me/601169642305" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="card">
       <img src="a3.jpg" alt="Assistant 3">
       <div class="name">Assistant 3</div>
       <div class="number">+60 16-724 2795</div>
-    </a>
-    <a href="https://wa.me/60164514101" class="card">
+      <a class="btn" href="https://wa.me/60167242795" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="card">
       <img src="a4.jpg" alt="Assistant 4">
       <div class="name">Assistant 4</div>
       <div class="number">+60 16-451 4101</div>
-    </a>
-    <a href="https://wa.me/601169695806" class="card">
+      <a class="btn" href="https://wa.me/60164514101" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="card">
       <img src="a5.jpg" alt="Assistant 5">
       <div class="name">Assistant 5</div>
       <div class="number">+60 11-6969 5806</div>
-    </a>
-    <a href="https://wa.me/60169358104" class="card">
+      <a class="btn" href="https://wa.me/601169695806" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="card">
       <img src="a6.jpg" alt="Assistant 6">
       <div class="name">Assistant 6</div>
       <div class="number">+60 16-935 8104</div>
-    </a>
+      <a class="btn" href="https://wa.me/60169358104" target="_blank">WhatsApp</a>
+    </div>
   </div>
+
 </body>
 </html>
